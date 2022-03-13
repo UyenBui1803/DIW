@@ -1,0 +1,250 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>YUBEE ICE CREAM</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="IMAGES/image%2024.png" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/main-style.css" type="text/css">
+<link rel="stylesheet" href="css/all.css" type="text/css">
+<link rel="stylesheet" href="css/shop.css" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	  <div class="modal fade" id="shoppingCart">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Giỏ hàng</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span class="cart-price cart-header cart-column">PRICE</span> <span class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+          <button class="btn btn-primary btn-purchase" type="button" onClick="thanhtoan()">Thanh toán</button>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="search-box">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="text-primary"> SEARCH BOX</h2>
+        <button type="button" data-dismiss="modal" class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form  name="search">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Seach..." id="mail" name="email">
+            <div class="input-group-append ">
+              <button class="btn btn-green text-white" type="submit">Go</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green text-white" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-trang50 navbar-light shadow fixed-top">
+  <div class="container-fluid"> <a href="index.html" class="navbar-brand"><img src="IMAGES/logo.png"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+	  <span class="navbar-toggler-icon"></span>
+	  </button>
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+        <li class="nav-item dropdown"> <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+          <div class="dropdown-menu"> <a href="our-staff.html" class="dropdown-item">Our Staff</a> <a href="our-price.html" class="dropdown-item">Our Prices</a> <a href="our-recipies.html" class="dropdown-item">Our Recipies</a> </div>
+        </li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="navbar-text "> <a href="#" data-toggle="modal" data-target="#shoppingCart"> <i class="fas fa-shopping-cart fa-lg" ></i> <span class="badge badge-danger" id="sl">0</span> </a> <a href="#search-box" data-toggle="modal"> <i class="fas fa-search fa-lg"></i> </a> </div>
+    </div>
+  </div>
+</nav>
+<!-- InstanceBeginRepeat name="RepeatRegion1" --><!-- InstanceBeginRepeatEntry -->
+<div class="page-head d-flex justify-content-center  align-items-center"> <!-- InstanceBeginEditable name="ten-trang" -->
+  <div class="w-50 text-center text-light">
+    <p class="display-3"> About Us</p>
+    <h5>Home / About</h5>
+  </div>
+<!-- InstanceEndEditable --></div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --><!-- InstanceBeginEditable name="noidung" -->
+<main>
+	<div class="py-5"></div>	
+	<div class="py-4"></div>	
+	<div class="story">
+		<div class="container">
+			<div class="row story-tell py-5">
+				<div class="col-md-4 text-center align-self-center">
+					<h3>OUR STORY</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi et dolor ornare pellentesque. Nullam porttitor, odio id facilisis dapibus</p>
+					<div class="btn btn-green px-4 rounded"><a href="#" class="text-white text-center">Read more</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-5" id="special">
+		<div class="w-50 mx-auto text-center">
+			<img src="IMAGES/icon-section.jpg" class="d-block mx-auto" alt="title">
+			<h2>OUR SPECIALS
+			</h2>
+		</div>
+		<div class="container">
+			<div class="row spoint d-flex my-5 align-items-center">
+				<div class="col-md-8 photo">
+					<div class="square-bg pink"></div>
+					<div class="special-img">
+						<img src="IMAGES/about/our special 1.jpg" class="d-block img-fluid" alt="spimg">
+					</div>
+				</div>
+				<div class="col-md-4 py-5 caption">
+					<img src="IMAGES/about/bell.png" class="d-block img-fluid" alt="icon">
+					<h4 class="mt-4">Enjoy Movement Tasty Ice Cream</h4>
+					<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				</div>
+			</div>
+			<div class="row spoint d-flex flex-row-reverse my-5 align-items-center">
+				<div class="col-md-8 photo-right d-flex flex-row-reverse">
+					<div class="square-bg violet"></div>
+					<div class="special-img">
+						<img src="IMAGES/about/our special 2.jpg" class="d-block img-fluid" alt="spimg">
+					</div>
+				</div>
+				<div class="col-md-4 py-5 caption-right text-right" >
+					<img src="IMAGES/about/star.png" class="d-block img-fluid" alt="icon">
+					<h4>Tasty Flavour Grape Scoop Cream</h4>
+					<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				</div>
+			</div>
+			<div class="row spoint d-flex my-5 align-items-center">
+				<div class="col-md-8 photo">
+					<div class="square-bg green"></div>
+					<div class="special-img">
+						<img src="IMAGES/about/our special 3.jpg" class="d-block img-fluid" alt="spimg">
+					</div>
+				</div>
+				<div class="col-md-4 py-5 caption">
+					<img src="IMAGES/about/leaf.png" class="d-block img-fluid" alt="icon">
+					<h4 class="mt-4">Outlook Coffee Ice Cream</h4>
+					<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-5"></div>
+	<div class="standard">
+		<div class="w-50 mx-auto text-center">
+			<img src="IMAGES/icon-flavour.png" class="d-block mx-auto" alt="flavor">
+			<h2>OUR STANDARDS</h2>
+		</div>
+		<div class="standard-banner mt-5">
+			<div class="stan-caption pt-5">
+				<ul class="pl-0">
+					<li class="text-white d-flex align-items-start my-3">
+						<div class="w-25">
+							<img src="IMAGES/about/1 (1).png" class="d-block mx-auto" alt="number">
+						</div>
+						<div class="w-75">
+							<h4><b>Lorem ipsum dolor sit amet.</b></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse</p>
+						</div>
+					</li>
+					<li class="text-white d-flex align-items-start my-3">
+						<div class="w-25">
+							<img src="IMAGES/about/2.png" class="d-block mx-auto" alt="number">
+						</div>
+						<div class="w-75">
+							<h4><b>Lorem ipsum dolor sit amet.</b></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse</p>
+						</div>
+					</li>
+					<li class="text-white d-flex align-items-start my-3">
+						<div class="w-25">
+							<img src="IMAGES/about/3.png" class="d-block mx-auto" alt="number">
+						</div>
+						<div class="w-75">
+							<h4><b>Lorem ipsum dolor sit amet.</b></h4>
+						</div>
+					</li>
+					<li class="text-white d-flex align-items-start my-3">
+						<div class="w-25">
+							<img src="IMAGES/about/4.png" class="d-block mx-auto" alt="number">
+						</div>
+						<div class="w-75">
+							<h4><b>Lorem ipsum dolor sit amet.</b></h4>
+						</div>
+					</li>
+					<li class="text-white d-flex align-items-start my-3">
+						<div class="w-25">
+							<img src="IMAGES/about/5.png" class="d-block mx-auto" alt="number">
+						</div>
+						<div class="w-75">
+							<h4><b>Lorem ipsum dolor sit amet.</b></h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="py-5"></div>
+	<div class="py-5"></div>
+	
+</main>
+<!-- InstanceEndEditable -->
+<footer class="bg-footer text-light py-3">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-4"> <img src="IMAGES/logo-footer.png">
+        <p class="my-4">Lorem ipsum dolor sit amet, matti consectetuer adipiscing  suspendisse et justo.  Praesent mattis ugue.</p>
+        <div class="icon d-flex">
+          <div class="out-circle bg-info" > <i  class="fab fa-facebook-f fa-lg"></i> </div>
+          <div class="out-circle bg-danger"> <i  class="fab fa-instagram fa-lg"></i> </div>
+          <div class="out-circle bg-info"> <i  class="fab fa-twitter fa-lg"></i> </div>
+          <div class="out-circle bg-danger"> <i  class="fab fa-google-plus fa-lg"></i> </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4 class="my-4">Open Hour</h4>
+        <p><b>Monday: </b> Closed</p>
+        <p><b>Tuesday- Friday: </b><br>
+          8:00 AM - 9:00 PM</p>
+        <p><b>Saturday- Sunday: </b><br>
+          10:00 AM - 6:00 PM</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="my-4">Find us</h4>
+        <p><b>Address: </b> 75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+        <p><b>Email:</b> yupee@gmail.com</p>
+        <p><b>Phone: </b> +44 987-654-3210</p>
+      </div>
+    </div>
+  </div>
+  <div class="border-top border-secondary py-4">
+    <p class="text-center">Copyright © 2020 Yupee Store. </p>
+  </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/shop.js"></script>
+</body>
+<!-- InstanceEnd --></html>

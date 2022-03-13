@@ -1,0 +1,255 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>YUBEE ICE CREAM</title>
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="IMAGES/image%2024.png" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/main-style.css" type="text/css">
+<link rel="stylesheet" href="css/all.css" type="text/css">
+<link rel="stylesheet" href="css/shop.css" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	  <div class="modal fade" id="shoppingCart">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Giỏ hàng</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="cart-row d-flex"> <span class="cart-item cart-header cart-column">ITEM</span> <span class="cart-price cart-header cart-column">PRICE</span> <span class="cart-quantity cart-header cart-column">QUANTITY</span> </div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+          <button class="btn btn-primary btn-purchase" type="button" onClick="thanhtoan()">Thanh toán</button>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal" id="search-box">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="text-primary"> SEARCH BOX</h2>
+        <button type="button" data-dismiss="modal" class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form  name="search">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Seach..." id="mail" name="email">
+            <div class="input-group-append ">
+              <button class="btn btn-green text-white" type="submit">Go</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green text-white" data-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg bg-trang50 navbar-light shadow fixed-top">
+  <div class="container-fluid"> <a href="index.html" class="navbar-brand"><img src="IMAGES/logo.png"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+	  <span class="navbar-toggler-icon"></span>
+	  </button>
+    <div class="navbar-collapse collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+        <li class="nav-item dropdown"> <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+          <div class="dropdown-menu"> <a href="our-staff.html" class="dropdown-item">Our Staff</a> <a href="our-price.html" class="dropdown-item">Our Prices</a> <a href="our-recipies.html" class="dropdown-item">Our Recipies</a> </div>
+        </li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="navbar-text "> <a href="#" data-toggle="modal" data-target="#shoppingCart"> <i class="fas fa-shopping-cart fa-lg" ></i> <span class="badge badge-danger" id="sl">0</span> </a> <a href="#search-box" data-toggle="modal"> <i class="fas fa-search fa-lg"></i> </a> </div>
+    </div>
+  </div>
+</nav>
+<!-- InstanceBeginRepeat name="RepeatRegion1" --><!-- InstanceBeginRepeatEntry -->
+<div class="page-head d-flex justify-content-center  align-items-center"> <!-- InstanceBeginEditable name="ten-trang" -->
+  <div class="w-50 text-center text-light">
+    <p class="display-3"> Our Prices</p>
+    <h5>Home / Services / Our Prices</h5>
+  </div>
+<!-- InstanceEndEditable --></div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --><!-- InstanceBeginEditable name="noidung" -->
+<main>
+	 <section class="my-5 py-5" id="our-prices">
+		<div class="w-50 mx-auto text-center">
+			<img src="IMAGES/staff/image 47.png" class="d-block mx-auto" alt="flavor">
+			<h2>OUR PRICES</h2>
+		</div>
+		<div class="container py-2 py-md-5 mx-auto">
+			<div class="row d-flex justify-content-between my-5">
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/img-3_276ca3f1-6b47-47e6-a17b-348280738585 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Hot Chocolate Cream</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$262.00</h4>
+						<div class="btn btn-green rounded text-white px-4">Best</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/homemade-vanilla-ice-cream-poured-with-honey-with-pieces-crushed-black-chocolate-glass-bowl-isolated-white_327813-60 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Vanilla with Honey</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$218.00</h4>
+						<div class="btn btn-yellow rounded text-white px-4">Sale</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/ice-cream-with-syrup-berries-isolated-white_185193-13104 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Vanilla Peanut</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$312.00</h4>
+						<div class="btn btn-yellow rounded text-white px-4">Sale</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/image 8 1.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Blue Sicle</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$25.00</h4>
+						<div class="btn btn-pink rounded text-white px-4">New</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/img-2 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Banana with Choco</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$262.00</h4>
+						<div class="btn btn-pink rounded text-white px-4">New</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/gettyimages-598838734-612x612 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Rainbow Sherbet</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$312.00</h4>
+						<div class="btn btn-yellow rounded text-white px-4">Sale</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/lindsay-moe-sKM8RK2C-YI-unsplash 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Cherry Sicle</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$85.00</h4>
+						<div class="btn btn-pink rounded text-white px-4">New</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex my-3 p-3 align-items-center">
+					<div class="w-25">
+						<img src="IMAGES/price/cropped-1920-1080-735106 2.png" class="rounded img-fluid w-100" alt="flavor">
+					</div>
+					<div class="w-50 px-4">
+						<h4>Lemon Scope</h4>
+						<p>Chocolate sauce, chocolate shavings oreos</p>
+					</div>
+					<div class="w-25 text-center">
+						<h4>$85.00</h4>
+						<div class="btn btn-green rounded text-white px-4">Best</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="container-fluid sale-off">
+		 	<img src="IMAGES/price/image 69.png" class="d-block img-fluid w-100" alt="sale">
+			<div class="christmax">
+				<h1 class="text-white text-center">BIG SALE UP<br>TO <span style="color: #FFB22F">60% OFF</span></h1>
+				<div class="btn btn-warning rounded px-4"><a href="#" class="text-white">Shop now</a></div>
+		 	</div>
+		 </div>
+		 <div class="py-5"></div>
+		 <div class="py-5"></div>
+		 <div class="py-3"></div>
+	</section>
+</main>
+<!-- InstanceEndEditable -->
+<footer class="bg-footer text-light py-3">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-4"> <img src="IMAGES/logo-footer.png">
+        <p class="my-4">Lorem ipsum dolor sit amet, matti consectetuer adipiscing  suspendisse et justo.  Praesent mattis ugue.</p>
+        <div class="icon d-flex">
+          <div class="out-circle bg-info" > <i  class="fab fa-facebook-f fa-lg"></i> </div>
+          <div class="out-circle bg-danger"> <i  class="fab fa-instagram fa-lg"></i> </div>
+          <div class="out-circle bg-info"> <i  class="fab fa-twitter fa-lg"></i> </div>
+          <div class="out-circle bg-danger"> <i  class="fab fa-google-plus fa-lg"></i> </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4 class="my-4">Open Hour</h4>
+        <p><b>Monday: </b> Closed</p>
+        <p><b>Tuesday- Friday: </b><br>
+          8:00 AM - 9:00 PM</p>
+        <p><b>Saturday- Sunday: </b><br>
+          10:00 AM - 6:00 PM</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="my-4">Find us</h4>
+        <p><b>Address: </b> 75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+        <p><b>Email:</b> yupee@gmail.com</p>
+        <p><b>Phone: </b> +44 987-654-3210</p>
+      </div>
+    </div>
+  </div>
+  <div class="border-top border-secondary py-4">
+    <p class="text-center">Copyright © 2020 Yupee Store. </p>
+  </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/shop.js"></script>
+</body>
+<!-- InstanceEnd --></html>
